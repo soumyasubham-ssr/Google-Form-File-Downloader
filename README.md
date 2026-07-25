@@ -1,8 +1,12 @@
+<img width="257" height="266" alt="img" src="https://github.com/user-attachments/assets/6390f116-b2b1-496f-8ab1-ee39d5a2ad83" />
+
 # Google Form File Downloader
 
 > A polished Windows desktop utility for downloading files from Excel-based Google Form responses.
 
 Google Form File Downloader reads a spreadsheet containing filenames and file URLs, downloads the files concurrently, safely renames them, and writes a detailed CSV activity log.
+
+<img width="492" height="383" alt="image" src="https://github.com/user-attachments/assets/60249dde-3f69-4d3f-8114-9b9b929e39ab" />
 
 ## Features
 
@@ -22,15 +26,6 @@ Google Form File Downloader reads a spreadsheet containing filenames and file UR
 - Python 3.9 or later
 - Internet access for downloading files
 - An `.xlsx` or `.xls` workbook with at least two columns
-
-## Run from source
-
-```powershell
-python -m pip install -r requirements.txt
-python google_form_file_downloader.py
-```
-
-On Windows, you can also run `run_gui_downloader.bat`.
 
 ## Prepare the spreadsheet
 
@@ -52,17 +47,6 @@ Use `assets/template.xlsx` or the **Template** button in the application for a r
 
 For Google Drive files, confirm that the files are accessible with the sharing permissions required by your organization.
 
-## Build the Windows executable
-
-Install PyInstaller and run the included spec file:
-
-```powershell
-python -m pip install pyinstaller
-pyinstaller "Google Form File Downloader.spec"
-```
-
-The executable is generated in `dist/`. The spec file bundles the Excel template and application icon.
-
 ## Project layout
 
 ```text
@@ -75,16 +59,6 @@ The executable is generated in `dist/`. The spec file bundles the Excel template
 ├── requirements.txt
 └── run_gui_downloader.bat
 ```
-
-## Development checks
-
-Run the Python syntax check before submitting changes:
-
-```powershell
-python -m py_compile google_form_file_downloader.py
-```
-
-The application is intentionally distributed as a focused desktop utility and does not require a database or external service configuration.
 
 ## Contributing
 
