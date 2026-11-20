@@ -75,5 +75,5 @@ python tools/make_icon.py
 
 | Workflow | Trigger | What it does |
 | --- | --- | --- |
-| `ci.yml` | push / pull request | Runs pytest on Windows and Ubuntu (Python 3.9 and 3.13), and builds the exe on Windows as a downloadable artifact |
+| `ci.yml` | push / pull request | Runs pytest on Windows and Ubuntu (Python 3.10 and 3.13), and builds the exe on Windows as a downloadable artifact |
 | `release.yml` | manual | Tests, builds and publishes a GitHub release for the given tag |

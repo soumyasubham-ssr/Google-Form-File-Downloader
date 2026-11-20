@@ -70,7 +70,7 @@ See the **[User Guide](docs/USER_GUIDE.md)** for the full walkthrough, the log f
 
 ## Run from source
 
-Requires Python 3.9+ on Windows (macOS/Linux work too, with Tk installed).
+Requires Python 3.10+ on Windows (macOS/Linux work too, with Tk installed).
 
 ```powershell
 git clone https://github.com/soumyasubham-ssr/Google-Form-File-Downloader.git
