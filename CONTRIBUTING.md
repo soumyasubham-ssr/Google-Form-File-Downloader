@@ -11,23 +11,26 @@ Thanks for helping improve Google Form File Downloader.
 ## Local setup
 
 ```powershell
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 python google_form_file_downloader.py
 ```
 
+See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for the architecture overview.
+
 ## Validation
 
-Run the syntax check before opening a pull request:
+Run the test suite before opening a pull request (no internet connection needed):
 
 ```powershell
-python -m py_compile google_form_file_downloader.py
+python -m pytest
 ```
+
+Keep download, parsing and filename logic in `gffd/core.py` (no Tkinter imports) and add tests for it in `tests/`.
 
 If you change packaging, also test the PyInstaller build:
 
 ```powershell
-python -m pip install pyinstaller
-pyinstaller "Google Form File Downloader.spec"
+pyinstaller --noconfirm "Google Form File Downloader.spec"
 ```
 
 ## Pull requests
